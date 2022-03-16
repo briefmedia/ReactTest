@@ -61,4 +61,5 @@ Really, we are just looking for good code.
 
 Email questions to:
     
-    - Greg [greg@briefmedia.com](mailto://greg@briefmedia.com)
+Becca Thompson 
+[becca@briefmedia.com](mailto://becca@briefmedia.com)
