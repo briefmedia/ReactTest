@@ -62,4 +62,4 @@ Really, we are just looking for good code.
 Email questions to:
     
 Becca Thompson 
-[becca@briefmedia.com](mailto://becca@briefmedia.com)
+[becca@briefmedia.com](mailto:becca@briefmedia.com)
