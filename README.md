@@ -1,5 +1,29 @@
 # Brief Media React Assessment
 
+## Thomas Kay Notes
+Follow the link to test out the app hosted on Heroku.
+[App demo](https://asapweb-contact-manager.herokuapp.com/)
+
+This app was built with the MVC model in mind, separating UI, model, and business logic.
+
+Build Stack:
+- Nextjs
+- MaterialUI 5
+- Prisma (Postgresql)
+
+Local development setup guide:
+- Create a .env file and add a DATABASE_URL environment variable and set it to your database url. [Prisma doc](https://www.prisma.io/docs/concepts/components/prisma-schema#accessing-environment-variables-from-the-schema)
+
+- npx prisma db push
+- npx prisma generate
+- yarn install
+- yarn dev
+
+API Routes
+- /api/v1/contact (GET) -- get all contacts
+- /api/v1/contact?id=123 (GET | POST) -- get, update, or delete contact by id
+
+
 ## Challenge
 Your task is to utilize a simple API to create a `Contact Management` web application. Using RESTful endpoints, you should create an application that can create, read, update, and delete contacts.
 
