@@ -7,7 +7,7 @@ export default function App({ contacts }) {
 }
 
 export const getServerSideProps = async (pageContext) => {
-  const contacts = await contactController.getAll();
+  const contacts = (await contactController.getAll()) || [];
 
   return {
     props: {

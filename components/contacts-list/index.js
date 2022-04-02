@@ -8,7 +8,7 @@ import ContactForm from "components/contact-form";
 import { contactService } from "services/contact.service";
 
 const ContactsList = ({ contacts: initialContacts }) => {
-  const [contacts, setContacts] = useState(initialContacts);
+  const [contacts, setContacts] = useState(initialContacts || []);
   const [modalOpen, setModalOpen] = useState(false);
   const [contactEditing, setContactEditing] = useState(null);
 
