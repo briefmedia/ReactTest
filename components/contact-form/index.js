@@ -31,10 +31,10 @@ const ContactForm = ({ contact, onClose, editMode = false }) => {
   );
   const [address, setAddress] = useState(contact ? contact.address : "");
   const [emailAddresses, setEmailAddresses] = useState(
-    contact ? contact.emailAddresses : []
+    contact ? contact.emailAddresses || [] : []
   );
   const [phoneNumbers, setPhoneNumbers] = useState(
-    contact ? contact.phoneNumbers : []
+    contact ? contact.phoneNumbers || [] : []
   );
 
   const resetForm = () => {
@@ -157,9 +157,10 @@ const ContactForm = ({ contact, onClose, editMode = false }) => {
 
           <TextField
             sx={{ mb: 2 }}
-            label="Address"
+            fullWidth
             value={address}
             name="address"
+            label="Address"
             onChange={(e) => setAddress(e.target.value)}
             placeholder="Mailing address"
           />

@@ -81,14 +81,14 @@ const ContactCard = ({ contact = {}, onUpdate, onDelete }) => {
           <Typography>{address}</Typography>
         </Box>
         <Box>
-          {emailAddresses.length
+          {emailAddresses && emailAddresses.length
             ? emailAddresses.map((emailAddress, index) => (
                 <Typography key={index}>{emailAddress}</Typography>
               ))
             : null}
         </Box>
         <Box>
-          {phoneNumbers.length
+          {phoneNumbers && phoneNumbers.length
             ? phoneNumbers.map((phoneNumber, index) => (
                 <Stack key={index} flexDirection="row">
                   <Typography sx={{ mr: 1 }}>{phoneNumber.type}:</Typography>

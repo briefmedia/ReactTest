@@ -12,13 +12,13 @@ const ContactsList = ({ contacts: initialContacts }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [contactEditing, setContactEditing] = useState(null);
 
-  const handleContactFormClose = () => {
+  const handleContactFormClose = async () => {
     setContactEditing(null);
     setModalOpen(false);
-    updateContracts();
+    await updateContracts();
   };
 
-  const handleContactAdd = async (contact) => {
+  const handleContactAdd = async () => {
     setContactEditing(null);
     setModalOpen(true);
   };
