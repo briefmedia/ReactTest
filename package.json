@@ -1,0 +1,42 @@
+{
+  "name": "brief-media-react-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "start-local": "next start",
+    "lint": "next lint",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/lab": "^5.0.0-alpha.75",
+    "@mui/material": "^5.3.1",
+    "@prisma/client": "^3.11.1",
+    "date-fns": "^2.28.0",
+    "gsap": "^3.9.1",
+    "moment": "^2.29.1",
+    "next": "12.1.4",
+    "next-connect": "^0.12.2",
+    "nextjs-progressbar": "^0.0.14",
+    "prisma": "^3.11.1",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-multi-email": "^0.5.3"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.162",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^13.0.0",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}
