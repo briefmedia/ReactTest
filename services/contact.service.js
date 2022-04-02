@@ -8,7 +8,7 @@ export const contactService = {
   delete: _delete,
 };
 
-const baseUrl = `/api/contacts`;
+const baseUrl = `/api/v1/contact`;
 
 function getAll() {
   return fetchWrapper.get(baseUrl);
