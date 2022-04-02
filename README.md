@@ -12,7 +12,7 @@ Build Stack:
 - Prisma (Postgresql)
 
 Local development setup guide:
-- Create a .env file and add a DATABASE_URL environment variable and set it to your database url. [Prisma doc](https://www.prisma.io/docs/concepts/components/prisma-schema#accessing-environment-variables-from-the-schema)
+- Create a .env file and add a DATABASE_URL environment variable and set it to your postgressql database url. [Prisma doc](https://www.prisma.io/docs/concepts/components/prisma-schema#accessing-environment-variables-from-the-schema)
 
 - npx prisma db push
 - npx prisma generate
@@ -20,9 +20,11 @@ Local development setup guide:
 - yarn dev
 
 API Routes
-- /api/v1/contact (GET) -- get all contacts
-- /api/v1/contact?id=123 (GET | POST) -- get, update, or delete contact by id
+- /api/v1/contact (GET | POST) -- get all contacts, create new contact
+- /api/v1/contact?id=123 (GET | PUT | DELETE) -- get, update, or delete contact by id
 
+Unit Tests with Jest
+- only initial setup have been implemented
 
 ## Challenge
 Your task is to utilize a simple API to create a `Contact Management` web application. Using RESTful endpoints, you should create an application that can create, read, update, and delete contacts.
